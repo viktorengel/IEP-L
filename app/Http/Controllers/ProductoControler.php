@@ -9,7 +9,7 @@ class ProductoControler extends Controller
 {
     public function listar()
     {
-        $productos = DB::select('select * from productos');
+        $productos = DB::select('select * from productosX');
         return view('producto.listar', compact('productos'));
     }
     

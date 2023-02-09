@@ -18,6 +18,7 @@ return new class extends Migration
             $table->dateTime('fecha');
             $table->boolean('estado')->default(false);
             $table->text('descripcion')->nullable();
+            $table->string('cod_factura', 30)->nullable();
             $table->timestamps();
         });
     }
