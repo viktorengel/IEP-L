@@ -23,6 +23,10 @@ return new class extends Migration
             $table->bigInteger('categoria_id')->unsigned();
             $table->foreign('categoria_id')->references('id')->on('categorias');
             $table->timestamps();
+
+            //N:1
+            $table->bigInteger('marca_id')->unsigned();
+            $table->foreign('marca_id')->references('id')->on('marcas');
         });
     }
 
