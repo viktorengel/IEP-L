@@ -9,7 +9,7 @@ class Categoria extends Model
 {
     use HasFactory;
 
-    //ya esta conectado con la tabla categorias
+    //Categoria
 
     protected $table = 'categorias';
 }
