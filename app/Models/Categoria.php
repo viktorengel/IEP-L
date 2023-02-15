@@ -11,5 +11,10 @@ class Categoria extends Model
 
     //Categoria
 
-    protected $table = 'categorias';
+    //protected $table = 'categorias';
+
+    public function productos()
+    {
+        return $this->hasMany(Producto::class);
+    }
 }
