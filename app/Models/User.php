@@ -45,9 +45,9 @@ class User extends Authenticatable
     ];
 
     // 1:N
-
-    public function persona()
+    public function persona() 
     {
         return $this->hasOne(Person::class);
     }
+
 }
